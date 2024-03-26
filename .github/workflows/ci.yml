@@ -56,7 +56,7 @@ jobs:
         working-directory: ./pkg/browser
       - name: test documentation
         run: |
-          pnpm docs
+          pnpm run docs
 
   build_docs:
     runs-on: ubuntu-latest
