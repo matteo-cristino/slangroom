@@ -74,8 +74,10 @@ jobs:
         uses: actions/configure-pages@v4
       - name: ⏬ Install dependencies
         run: pnpm install
-      - name: 🏗️ update sentences tabled and build the docs
-        run: pnpm build && pnpm docs
+      - name: 🏗️ update sentences tabled
+        run: pnpm build
+      - name: 📖 build the docs
+        run: pnpm docs
       - name: ⏫ Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
